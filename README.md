@@ -29,11 +29,11 @@ Use HTML, CSS, templating, and any CSS resources neccessary to make your site ae
 
 ### Functionality (10 pts)
 
-#### Base Requirements (5 pts):
+#### Base Requirements: 1 point each (5 pts total):
 
 * The layout should be similar to the example images provided.
 
-* The project should use CSS Grid for the main layout. Other elments may be mixed in as you see fit. 
+* The project should use CSS Grid for the main layout. Other elements may be mixed in as you see fit. 
 
 * The User should be able to do a keyword search that will return a list of Wiki entries where the entered keywords are found in the entry's title and/or text.
 
@@ -42,7 +42,7 @@ Use HTML, CSS, templating, and any CSS resources neccessary to make your site ae
 * All Users should be able to click the Title of an individual entry to see the full post. If the post has an image, it should display. Any 'Related Information' items for the post should be displayed in a sidebar at the right of the page. If a displayed entry is also owned by the current signed in User, you should offer them options to 'Edit and/or 'Delete' the entry.
 
 #### Model Details (5 pts):
-SUCCESSFUL CREATION OF REQUIRED MODELS AND ASSOCIATED KEYS MANDATORY FOR ANY POINTS
+SUCCESSFUL CREATION OF REQUIRED MODELS MANDATORY FOR ANY POINTS FOR THIS SECTION
 * Each Wiki entry should support a required 'Post Title', 'Post Text', 'created date/time', 'last updated date/time', along with an *optional* 'Post Image'. *NOTE:* The image should be stored in a model instance (i.e. no external URLs)
 
 * Each Wiki entry should also *optionally* support 0 to n 'Related Information' items each of which represent related information. Each post line item should also support a required 'Item Title', 'Item Text', 'created date/time', 'last updated date/time', along with an *optional* 'Item Image'. *NOTE:* The image should be stored in a model instance (i.e. no external URLs)
