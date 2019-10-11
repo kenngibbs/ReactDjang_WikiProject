@@ -1,4 +1,4 @@
-# Project 2: A Django Wiki web application
+# Django Project: A  Wiki web application
 
 Create an a Wikipedia Light web application to support multiple Wiki Post Authors.
 
