@@ -53,6 +53,18 @@ SUCCESSFUL CREATION OF REQUIRED MODELS MANDATORY FOR ANY POINTS FOR THIS SECTION
 
 * You application depends on the built-in Django Admin for all  of your database maintenance (1 pts)
 
+### EXAMPLE SCREENS FOR INSPIRATION:
+
+### Sample Landing Page View
+![Sample Landing Page View](https://github.com/cs-fullstack-master/project2-django/blob/master/sample_wiki_home_page.png)
+- - - - -
+### Sample Individual Entry View
+![Sample Individual Entry View](https://github.com/cs-fullstack-master/project2-django/blob/master/sample_wiki_layout_guide.png)
+- - - - -
+### Example Edit Individual Entry View
+![Example Edit Individual View](https://github.com/cs-fullstack-master/project2-django/blob/master/sample_wiki_edit_page.png)
+- - - - -
+
 ### RESOURCES:
 * This project will require the use of imagefields in your model. See the documentation on how to use them: https://docs.djangoproject.com/en/2.1/topics/files/
 
