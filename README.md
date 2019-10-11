@@ -3,8 +3,8 @@
 Create an a Wikipedia Light web application to support multiple Wiki Post Authors.
 
 ### Design Requirements:
-* You MUST produce a written design *prior* to starting to code your solution. This design doesn't have to be a book, but should at least note needed endpoints and basic sketches on how you plan to use CSS Grid for your various screens. ADD YOUR DESIGN DOCUMENTATION TO YOUR PROJECT (pictures, screenshots, or similar)
-* You MUST demonstrate that you have stood up all your endpoints, routes, views, and templates with stubbed out dummy data *prior* to adding specific logic. AT LEAST ONE INSTRUCTOR MUST REVIEW YOUR FUNCTIONING SKELETON PROJECT BEFORE YOU PROCEED
+* You **MUST** produce a written design *prior* to starting to code your solution. This design doesn't have to be a book, but should at least note needed endpoints and basic sketches on how you plan to use CSS Grid for your various screens. ADD YOUR DESIGN DOCUMENTATION TO YOUR PROJECT (pictures, screenshots, or similar)
+* You **MUST** demonstrate that you have stood up all your endpoints, routes, views, and templates with stubbed out dummy data *prior* to adding specific logic. AT LEAST ONE INSTRUCTOR MUST REVIEW YOUR FUNCTIONING SKELETON PROJECT BEFORE YOU PROCEED
 
 ## Functional Requirements (Total of 20 points)
 
@@ -12,20 +12,20 @@ Create an a Wikipedia Light web application to support multiple Wiki Post Author
 Use HTML, CSS, templating, and any CSS resources neccessary to make your site aesthetically pleasing. NOTE: Primary layout should rely on CSS grid!
 
 #### Consistency (3 pts)
-- 3pts: Background, text format, and color usage are carefully chosen to produce a consistent screen layout for all your pages.
-- 2pts: Background, text format, and color usage are somewhat consistent with little inappropriate variation.
-- 1pt: Background, text format, and color usage are randomly chosen with few consistent elements throughout
+- **3 pts**: Background, text format, and color usage are carefully chosen to produce a consistent screen layout for all your pages.
+- **2 pts**: Background, text format, and color usage are somewhat consistent with little inappropriate variation.
+- **1 pt**: Background, text format, and color usage are randomly chosen with few consistent elements throughout
 
 #### Navigational/Structural Format (4 pts)
-- 4pts: Content is presented in a clear manner that is easy to follow. Readers can get around your website with ease. There are no blind links, and a navigation bar is provided per requirements below.
-- 3pts: Content is presented in a clear manner that is easy to follow. Navigation is difficult. Not intuitive.
-- 2pts: Content is somewhat confusing and difficult to follow. Site is somewhat difficult to navigate. Too much textual information.
-- 1pt: Content is confusing and difficult to follow. Site is difficult to navigate. Not intuitive. Large images that take long to load.
+- **4 pts**: Content is presented in a clear manner that is easy to follow. Readers can get around your website with ease. There are no blind links, and a navigation bar is provided per requirements below.
+- **3 pts**: Content is presented in a clear manner that is easy to follow. Navigation is difficult. Not intuitive.
+- **2 pts**: Content is somewhat confusing and difficult to follow. Site is somewhat difficult to navigate. Too much textual information.
+- **1 pt**: Content is confusing and difficult to follow. Site is difficult to navigate. Not intuitive. Large images that take long to load.
 
 #### Simplicity and Color Scheme (3 pts)
-- 3pts: Content is simple and to the point. Design is easy to understand in many ways color is appropriately used to produce an atmosphere that expresses the character of the Web site. 
-- 2pts: Web page is somewhat busy. People reading it will have difficulty finding what they want quickly. Excessive use of graphic elements. Color is used somewhat appropriately to produce an atmosphere that expresses the character of the Web site.
-- 1pt: Web page is too busy. People reading it cannot find what they want quickly. Excessive use of graphic elements
+- **3 pts**: Content is simple and to the point. Design is easy to understand in many ways color is appropriately used to produce an atmosphere that expresses the character of the Web site. 
+- **2 pts**: Web page is somewhat busy. People reading it will have difficulty finding what they want quickly. Excessive use of graphic elements. Color is used somewhat appropriately to produce an atmosphere that expresses the character of the Web site.
+- **1 pt**: Web page is too busy. People reading it cannot find what they want quickly. Excessive use of graphic elements
 
 ### Functionality (10 pts)
 
@@ -45,13 +45,13 @@ Use HTML, CSS, templating, and any CSS resources neccessary to make your site ae
 SUCCESSFUL CREATION OF REQUIRED MODELS MANDATORY FOR ANY POINTS FOR THIS SECTION
 * Each Wiki entry should support a required 'Post Title', 'Post Text', 'created date/time', 'last updated date/time', along with an *optional* 'Post Image'. *NOTE:* The image should be stored in a model instance (i.e. no external URLs)
 
-* Each Wiki entry should also *optionally* support 0 to n 'Related Information' items each of which represent related information. Each post line item should also support a required 'Item Title', 'Item Text', 'created date/time', 'last updated date/time', along with an *optional* 'Item Image'. *NOTE:* The image should be stored in a model instance (i.e. no external URLs)
+* Each Wiki entry should also *optionally* support 0 to n 'Related Information' items each of which represent related information. Each post line item should also support a required 'Item Title', 'Item Text', 'created date/time', 'last updated date/time', along with an *optional* 'Item Image'. *NOTE:* The image should be stored as an ImageField in a model instance (i.e. no external URLs)
 
-* Authors and all Wiki Entries and related items can be administered from your web app, this includes a signup page for new Authors (5 pts)
+* Authors and all Wiki Entries and related items can be administered from your web app, this includes a signup page for new Authors (**5  pts**)
 
-* Your application depends on the built-in Django Admin for some portion of your database maintenance (3 pts)
+* Your application depends on the built-in Django Admin for some portion of your database maintenance (**3 pts**)
 
-* You application depends on the built-in Django Admin for all  of your database maintenance (1 pts)
+* You application depends on the built-in Django Admin for all  of your database maintenance (**1 pts**)
 
 ### EXAMPLE SCREENS FOR INSPIRATION:
 
