@@ -1,5 +1,8 @@
 # Django Project: A  Wiki web application
 
+### Note:
+This was a week long project we gave our students. I only did the functional piece of it. I still need to do the frontend design.
+
 Create an a Wikipedia Light web application to support multiple Wiki Post Authors.
 
 ### Design Requirements:
