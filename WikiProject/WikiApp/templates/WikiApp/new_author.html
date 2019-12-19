@@ -1,0 +1,10 @@
+{% extends 'WikiApp/base.html' %}
+
+{% block not_authenticated %}
+<h1>New Author</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Submit</button>
+</form>
+{% endblock %}

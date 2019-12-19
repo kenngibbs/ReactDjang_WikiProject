@@ -1,0 +1,26 @@
+{% extends 'WikiApp/base.html' %}
+
+{% block content %}
+<h1>Edit Main Wiki</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ mainWikiForm.as_p }}
+    <button>Submit</button>
+</form>
+<hr>
+<hr>
+<hr>
+
+
+<p>Related Content</p>
+{% for eachRelatedWiki in relatedWikis %}
+{{ eachRelatedWiki.title}} |
+<a href="{% url 'relatedEdit' eachRelatedWiki.id %}">Edit</a> |
+<a href="{% url 'relatedDelete' eachRelatedWiki.id %}">Delete</a><br>
+<img src="{{eachRelatedWiki.relatedImage.url}}" alt="no image" height="50px">
+{{ eachRelatedWiki.description}}<hr>
+{% endfor %}
+
+<a href="{% url 'relatedAdd' mainWikiID %}"><button>Add Related Item</button></a>
+
+{% endblock %}

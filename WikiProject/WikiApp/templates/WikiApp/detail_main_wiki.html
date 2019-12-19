@@ -1,0 +1,21 @@
+{% extends 'WikiApp/base.html' %}
+
+{% block content %}
+<h1>Detail Main Wiki Page</h1>
+{% if user.username == mainWiki.userForeignKey.username %}
+<a href="{% url 'mainEdit' mainWiki.id %}">Edit</a> |
+<a href="{% url 'mainDelete' mainWiki.id %}">Delete</a><br>
+{% endif %}
+{{ mainWiki.title }}<br>
+{{ mainWiki.description }}<br>
+<img src="{{mainWiki.mainImage.url}}" alt="no image" height="200px">
+<hr>
+
+<p>Related Content</p>
+{% for eachRelatedWiki in relatedWikis %}
+    {{ eachRelatedWiki.title}}<br>
+    <img src="{{eachRelatedWiki.relatedImage.url}}" alt="no image" height="50px">
+    {{ eachRelatedWiki.description}}<hr>
+{% endfor %}
+
+{% endblock %}

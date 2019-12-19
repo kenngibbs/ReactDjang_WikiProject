@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'WikiApp/css/base.css' %}">
+</head>
+<body>
+<h1>Welcome to WikiApp</h1>
+
+{% if user.is_authenticated %}
+<h3>Logged in as {{ user.username }}</h3>
+<a href="{% url 'userLogout' %}">Log Out</a><br><br><br><br>
+<a href="{% url 'index' %}">Home</a>
+<a href="{% url 'mainAdd' %}">New Wiki Entry</a>
+<a href="{% url 'userEntries' %}">Your Wiki Entries</a>
+<form action="{% url 'wikiSearch' %}" method="post" id="searchForm">
+    {% csrf_token %}
+    <input type="search" placeholder="Search" name="searchText">
+    <button>Search</button>
+</form>
+    {% block content %}
+        <p>Error finding content page. Did you call base.html by mistake???</p>
+    {% endblock %}
+{% else %}
+
+{% block not_authenticated %}
+{% for message in messages %}
+{{ message }}
+{% endfor %}
+
+<h1>Log in Below</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Submit</button>
+</form>
+<br>or <a href="{% url 'newAuthor' %}">Create a new user</a>
+{% endblock %}
+{% endif %}</body>
+</html>

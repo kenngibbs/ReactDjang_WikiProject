@@ -1,0 +1,11 @@
+{% extends 'WikiApp/base.html' %}
+
+{% block content %}
+<h1>User Wiki Entries</h1>
+{% for eachWikiEntry in allWikis %}
+<a href="{% url 'mainDetails' eachWikiEntry.id %}">{{ eachWikiEntry.title}}</a>
+<img src="{{eachWikiEntry.mainImage.url}}" alt="no image" height="100px"><hr>
+{% endfor %}
+
+
+{% endblock %}
